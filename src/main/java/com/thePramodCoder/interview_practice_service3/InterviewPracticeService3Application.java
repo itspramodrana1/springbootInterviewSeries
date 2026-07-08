@@ -7,6 +7,7 @@ import org.springframework.context.annotation.Bean;
 import org.springframework.web.servlet.View;
 import org.springframework.web.servlet.view.json.MappingJackson2JsonView;
 
+
 @SpringBootApplication
  public  class InterviewPracticeService3Application {
 
@@ -14,8 +15,8 @@ import org.springframework.web.servlet.view.json.MappingJackson2JsonView;
 		SpringApplication.run(InterviewPracticeService3Application.class, args);
 	}
 
-    @Bean("JsonViewTemplate")
-	public View name(){
-		return new MappingJackson2JsonView();
-	}
+//    @Bean("JsonViewTemplate")
+//	public View name(){
+//		return new MappingJackson2JsonView();
+//	}
 }

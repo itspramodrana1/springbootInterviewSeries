@@ -8,7 +8,7 @@ import org.springframework.web.servlet.ModelAndView;
 import java.util.HashMap;
 import java.util.Map;
 
-@Controller
+// @Controller
 public class DevController {
 
 //    @GetMapping("/name")
@@ -16,11 +16,11 @@ public class DevController {
 //        return "Pramod";
 //    }
 
-    public ModelAndView getNames(){
-        Map<String, Object> map = new HashMap<>();
-        map.put("Name", "Pramod");
-
-        return new ModelAndView("JsonViewTemplate", map);
-    }
+//    public ModelAndView getNames(){
+//        Map<String, Object> map = new HashMap<>();
+//        map.put("Name", "Pramod");
+//
+//        return new ModelAndView("JsonViewTemplate", map);
+//    }
 
 }
