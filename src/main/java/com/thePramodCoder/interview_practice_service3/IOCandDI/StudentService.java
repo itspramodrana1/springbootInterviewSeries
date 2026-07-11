@@ -1,10 +1,10 @@
-package com.thePramodCoder.interview_practice_service3.IOCandDI;
+// package com.thePramodCoder.interview_practice_service3.IOCandDI;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
   // @Service
-public class StudentService {
+// public class StudentService {
 
 //    @Autowired
 //    private  Student student;
@@ -16,4 +16,4 @@ public class StudentService {
 //    public Student getStudent(){
 //     return student;
 //    }
-}
+// }

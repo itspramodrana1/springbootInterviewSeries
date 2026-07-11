@@ -1,4 +1,4 @@
-package com.thePramodCoder.interview_practice_service3.DataBaseConnection;
+//package com.thePramodCoder.interview_practice_service3.DataBaseConnection;
 //
 //import jakarta.annotation.Generated;
 //import jakarta.persistence.*;
@@ -7,7 +7,7 @@ package com.thePramodCoder.interview_practice_service3.DataBaseConnection;
 //@Component
 //@Entity
 //@Table(name = "Employee")
-public class Employees {
+//public class Employees {
 //
 //    @Id
 //    @Column(name = "id")
@@ -41,4 +41,4 @@ public class Employees {
 //        this.name = name;
 //    }
 
-}
+// }

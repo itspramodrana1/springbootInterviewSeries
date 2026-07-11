@@ -1,6 +1,6 @@
 //import com.thePramodCoder.interview_practice_service3.DataBaseConnection;
-import com.thePramodCoder.interview_practice_service3.DataBaseConnection.Employees;
-import org.springframework.data.jpa.repository.JpaRepository;
+// import com.thePramodCoder.interview_practice_service3.DataBaseConnection.Employees;
+// import org.springframework.data.jpa.repository.JpaRepository;
 
 //package com.thePramodCoder.interview_practice_service3.DataBaseConnection;
 //

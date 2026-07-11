@@ -1,4 +1,4 @@
-package com.thePramodCoder.interview_practice_service3.RestControllerVsController;
+//package com.thePramodCoder.interview_practice_service3.RestControllerVsController;
 
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.GetMapping;
@@ -9,7 +9,7 @@ import java.util.HashMap;
 import java.util.Map;
 
 // @Controller
-public class DevController {
+//public class DevController {
 
 //    @GetMapping("/name")
 //    public String getName(){
@@ -23,4 +23,4 @@ public class DevController {
 //        return new ModelAndView("JsonViewTemplate", map);
 //    }
 
-}
+// }

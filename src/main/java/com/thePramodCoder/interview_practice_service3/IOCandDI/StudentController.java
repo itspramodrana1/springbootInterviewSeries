@@ -5,15 +5,15 @@ import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RestController;
 
   // @RestController
-public class StudentController {
+//public class StudentController {
 
    // @Autowired
   //  private StudentService studentService;
 
-    public StudentController(){
-        System.out.println("Student Controller object created at address" +
-                this.hashCode());
-    }
+//    public StudentController(){
+//        System.out.println("Student Controller object created at address" +
+//                this.hashCode());
+//    }
 
 //    @GetMapping("/student")
 //    public int getStudentAddress(){
@@ -21,4 +21,4 @@ public class StudentController {
 //      return s1.hashCode();
 //    }
 
-}
+// }
