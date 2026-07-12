@@ -1,6 +1,6 @@
 package com.thePramodCoder.interview_practice_service3;
 
-import com.thePramodCoder.interview_practice_service3.SpringBootApplication.Employee;
+// import com.thePramodCoder.interview_practice_service3.SpringBootApplication.Employee;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.SpringBootConfiguration;
 import org.springframework.boot.autoconfigure.EnableAutoConfiguration;
@@ -14,9 +14,11 @@ import org.springframework.stereotype.Controller;
 import org.springframework.web.servlet.View;
 // import org.springframework.web.servlet.view.json.MappingJackson2JsonView;
 
-@SpringBootConfiguration
-@ComponentScan(basePackages = "Controller" )
-@EnableAutoConfiguration(exclude = DispatcherServletAutoConfiguration.class)
+//@SpringBootConfiguration
+//@ComponentScan(basePackages = "Controller" )
+//@EnableAutoConfiguration(exclude = DispatcherServletAutoConfiguration.class)
+
+@SpringBootApplication
  public  class InterviewPracticeService3Application {
 
 	public static void main(String[] args) {
@@ -31,9 +33,9 @@ import org.springframework.web.servlet.View;
 
 
 	                    // Lecture 6 @SpringBootApplication
-	@Bean
-	public Employee createEmployee(){
-		return new Employee();
-	}
+//	@Bean
+//	public Employee createEmployee(){
+//		return new Employee();
+//	}
 
 }
