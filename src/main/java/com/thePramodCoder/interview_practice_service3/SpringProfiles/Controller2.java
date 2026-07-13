@@ -6,19 +6,23 @@ import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RestController;
 
 @RestController
-public class Controller {
+public class Controller2 {
 
     @Autowired
     private TwoFactorAuthenticationProperties twoFactorAuthenticationProperties;
 
 
-    @GetMapping("/message")
-    public String getMessage(){
-        return "Hello World";
-    }
+    @GetMapping("/send2fa")
+    public void send2faCode(){
 
-    @GetMapping("/2fa")
-    public Boolean is2faEnabled(){
-      return twoFactorAuthenticationProperties.isEnabled();
+        if(twoFactorAuthenticationProperties.isEnabled()){
+            if(twoFactorAuthenticationProperties.getProvider().equals("sms")){
+               // send via sms
+
+            } else if (twoFactorAuthenticationProperties.getProvider().equals("email")) {
+                // send via email
+
+            }
+        }
     }
 }
