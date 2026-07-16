@@ -1,0 +1,28 @@
+package com.thePramodCoder.interview_practice_service3.Controller;
+
+import com.thePramodCoder.interview_practice_service3.service.WalletService;
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.web.bind.annotation.PostMapping;
+import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.bind.annotation.RequestParam;
+import org.springframework.web.bind.annotation.RestController;
+
+@RestController
+@RequestMapping("/wallet")
+public class walletController {
+
+    @Autowired
+    private WalletService service;
+
+    @PostMapping("/transfer")
+    public String transfer( @RequestParam Long senderId,
+                           @RequestParam Long receiverId,
+                           @RequestParam Double amount){
+        try{
+            service.transfer(senderId, receiverId, amount);
+        }catch(Exception e){
+            return "Transfer failed : " + e.getMessage();
+        }
+        return "Transfer completed";
+    }
+}
