@@ -10,6 +10,7 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.bind.annotation.RestController;
 
+import java.util.Date;
 import java.util.List;
 
 @RestController
@@ -24,7 +25,11 @@ public class EmployeeController {
                                       @RequestParam(required = false, defaultValue = "5") int pageSize,
                                       @RequestParam(required = false, defaultValue = "id") String sortBy,
                                       @RequestParam(required = false, defaultValue = "ASC") String sortDir,
-                                      @RequestParam(required = false) String search){
+                                      @RequestParam(required = false) Long id,
+                                      @RequestParam(required = false) String name,
+                                      @RequestParam(required = false) String department,
+                                      @RequestParam(required = false) Date startDate,
+                                      @RequestParam(required = false) Date endDate){
         Sort sort = null;
         if(sortDir.equalsIgnoreCase("ASC")){
             sort = Sort.by(sortBy).ascending();
@@ -32,6 +37,6 @@ public class EmployeeController {
 
             sort = Sort.by(sortBy).descending();
         }
-        return employeeService.fetchAllEmployees(PageRequest.of(pageNo-1,pageSize,sort),search);
+        return employeeService.fetchAllEmployees(PageRequest.of(pageNo-1,pageSize,sort),id,name,department,startDate,endDate);
     }
 }
